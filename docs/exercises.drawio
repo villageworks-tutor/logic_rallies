@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" version="24.7.12" pages="3">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" version="24.7.12" pages="4">
   <diagram name="11_calcChange" id="iT6GAmAel3aYIEC_cNCm">
     <mxGraphModel dx="1634" dy="842" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -408,6 +408,194 @@
           <mxGeometry x="830" y="600" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="kPDJEy304kPlfB97Wm-x-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="aZdB4IPbFA3xgnilCvWI-1" source="YaI-RqHF9K6HXjOj0zNu-43" target="YaI-RqHF9K6HXjOj0zNu-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="21_groupTotal" id="HW8-fD4eInMCxMrdk7A4">
+    <mxGraphModel dx="1634" dy="842" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="Wbwb5unohPnjsa8_4MkI-0" />
+        <mxCell id="Wbwb5unohPnjsa8_4MkI-1" parent="Wbwb5unohPnjsa8_4MkI-0" />
+        <mxCell id="jjMblR6Ji7RYlL1l1uxo-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Wbwb5unohPnjsa8_4MkI-1" source="Wbwb5unohPnjsa8_4MkI-3" target="jjMblR6Ji7RYlL1l1uxo-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Wbwb5unohPnjsa8_4MkI-3" value="開始" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="Wbwb5unohPnjsa8_4MkI-1">
+          <mxGeometry x="110" y="40" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Wbwb5unohPnjsa8_4MkI-4" value="終了" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="Wbwb5unohPnjsa8_4MkI-1">
+          <mxGeometry x="110" y="443" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Wbwb5unohPnjsa8_4MkI-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Wbwb5unohPnjsa8_4MkI-1" source="Wbwb5unohPnjsa8_4MkI-6" target="Wbwb5unohPnjsa8_4MkI-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Wbwb5unohPnjsa8_4MkI-6" value="初期化処理" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;spacingTop=-32;strokeWidth=2;" vertex="1" parent="Wbwb5unohPnjsa8_4MkI-1">
+          <mxGeometry x="90" y="200" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Wbwb5unohPnjsa8_4MkI-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Wbwb5unohPnjsa8_4MkI-1" source="Wbwb5unohPnjsa8_4MkI-13" target="Wbwb5unohPnjsa8_4MkI-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Wbwb5unohPnjsa8_4MkI-13" value="表示処理" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;spacingTop=-32;strokeWidth=2;" vertex="1" parent="Wbwb5unohPnjsa8_4MkI-1">
+          <mxGeometry x="90" y="363" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Wbwb5unohPnjsa8_4MkI-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="Wbwb5unohPnjsa8_4MkI-1" source="Wbwb5unohPnjsa8_4MkI-33" target="Wbwb5unohPnjsa8_4MkI-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Wbwb5unohPnjsa8_4MkI-33" value="集計処理" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;spacingTop=-32;strokeWidth=2;" vertex="1" parent="Wbwb5unohPnjsa8_4MkI-1">
+          <mxGeometry x="90" y="280" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jjMblR6Ji7RYlL1l1uxo-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Wbwb5unohPnjsa8_4MkI-1" source="jjMblR6Ji7RYlL1l1uxo-0" target="Wbwb5unohPnjsa8_4MkI-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jjMblR6Ji7RYlL1l1uxo-0" value="商品別売上合計[6], 売上[20],&amp;nbsp;&lt;div&gt;&lt;font face=&quot;Lucida Console&quot;&gt;売上分類[6]&lt;/font&gt;, &lt;font face=&quot;Lucida Console&quot;&gt;i&lt;/font&gt;, 分類コード,&amp;nbsp; 処理件数, 売上計&lt;/div&gt;" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=hexagon;perimeter=hexagonPerimeter2;arcSize=6;size=0.12500000000000142;spacingTop=-40;strokeWidth=2;" vertex="1" parent="Wbwb5unohPnjsa8_4MkI-1">
+          <mxGeometry x="60" y="120" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="wsdWAnBKYm_6Vkn8JKa2-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Wbwb5unohPnjsa8_4MkI-1" source="jjMblR6Ji7RYlL1l1uxo-4" target="wsdWAnBKYm_6Vkn8JKa2-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jjMblR6Ji7RYlL1l1uxo-4" value="初期化処理" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="Wbwb5unohPnjsa8_4MkI-1">
+          <mxGeometry x="310" y="40" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Wbwb5unohPnjsa8_4MkI-1" source="wsdWAnBKYm_6Vkn8JKa2-0" target="q32LoB8GE_cLFo8J0Tgq-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wsdWAnBKYm_6Vkn8JKa2-0" value="&lt;font face=&quot;Lucida Console&quot;&gt;i ＝ 0&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="Wbwb5unohPnjsa8_4MkI-1">
+          <mxGeometry x="310" y="120" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="Wbwb5unohPnjsa8_4MkI-1" source="q32LoB8GE_cLFo8J0Tgq-0" target="q32LoB8GE_cLFo8J0Tgq-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-0" value="&lt;span style=&quot;background-color: initial;&quot;&gt;商品別売上合計&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;初期化ループ&lt;/span&gt;&lt;div&gt;&lt;div&gt;&lt;font face=&quot;Lucida Console&quot;&gt;i ＜ 6&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;" vertex="1" parent="Wbwb5unohPnjsa8_4MkI-1">
+          <mxGeometry x="290" y="195" width="139" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Wbwb5unohPnjsa8_4MkI-1" source="q32LoB8GE_cLFo8J0Tgq-2" target="q32LoB8GE_cLFo8J0Tgq-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-2" value="&lt;span style=&quot;background-color: initial;&quot;&gt;商品別売上合計&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;初期化ループ&lt;/span&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;flipV=1;" vertex="1" parent="Wbwb5unohPnjsa8_4MkI-1">
+          <mxGeometry x="290.5" y="438" width="139" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Wbwb5unohPnjsa8_4MkI-1" source="q32LoB8GE_cLFo8J0Tgq-3" target="q32LoB8GE_cLFo8J0Tgq-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-3" value="&lt;font face=&quot;Lucida Console&quot;&gt;商品別売上合計[i] ＝ 0&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="Wbwb5unohPnjsa8_4MkI-1">
+          <mxGeometry x="279.5" y="280" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Wbwb5unohPnjsa8_4MkI-1" source="q32LoB8GE_cLFo8J0Tgq-4" target="q32LoB8GE_cLFo8J0Tgq-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-4" value="&lt;font face=&quot;Lucida Console&quot;&gt;i ＝ i + 1&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="Wbwb5unohPnjsa8_4MkI-1">
+          <mxGeometry x="309.5" y="363" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-11" value="戻る" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="Wbwb5unohPnjsa8_4MkI-1">
+          <mxGeometry x="309.5" y="520" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="Wbwb5unohPnjsa8_4MkI-1" source="q32LoB8GE_cLFo8J0Tgq-12" target="q32LoB8GE_cLFo8J0Tgq-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-12" value="集計処理" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="Wbwb5unohPnjsa8_4MkI-1">
+          <mxGeometry x="550" y="40" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-13" value="&lt;font face=&quot;Lucida Console&quot;&gt;i ＝ 0&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="Wbwb5unohPnjsa8_4MkI-1">
+          <mxGeometry x="550" y="120" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="Wbwb5unohPnjsa8_4MkI-1" source="q32LoB8GE_cLFo8J0Tgq-14" target="q32LoB8GE_cLFo8J0Tgq-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-14" value="&lt;span style=&quot;background-color: initial;&quot;&gt;売上&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;集計ループ&lt;/span&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;font face=&quot;Lucida Console&quot;&gt;i ＜ 20&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;" vertex="1" parent="Wbwb5unohPnjsa8_4MkI-1">
+          <mxGeometry x="530.5" y="195" width="139" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Wbwb5unohPnjsa8_4MkI-1" source="q32LoB8GE_cLFo8J0Tgq-15" target="q32LoB8GE_cLFo8J0Tgq-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-15" value="&lt;span style=&quot;background-color: initial;&quot;&gt;売上集計&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;ループ&lt;/span&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;flipV=1;" vertex="1" parent="Wbwb5unohPnjsa8_4MkI-1">
+          <mxGeometry x="530.5" y="677" width="139" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="Wbwb5unohPnjsa8_4MkI-1" source="q32LoB8GE_cLFo8J0Tgq-17" target="q32LoB8GE_cLFo8J0Tgq-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-17" value="&lt;font face=&quot;Lucida Console&quot;&gt;分類コード ＝ 売上分類[i]&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="Wbwb5unohPnjsa8_4MkI-1">
+          <mxGeometry x="515" y="280" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Wbwb5unohPnjsa8_4MkI-1" source="q32LoB8GE_cLFo8J0Tgq-18" target="q32LoB8GE_cLFo8J0Tgq-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-18" value="&lt;font face=&quot;Lucida Console&quot;&gt;分類別売上合計[分類コード] +＝ 売上[i]&amp;nbsp;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="Wbwb5unohPnjsa8_4MkI-1">
+          <mxGeometry x="515" y="360" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="Wbwb5unohPnjsa8_4MkI-1" source="q32LoB8GE_cLFo8J0Tgq-13" target="q32LoB8GE_cLFo8J0Tgq-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="Wbwb5unohPnjsa8_4MkI-1" source="q32LoB8GE_cLFo8J0Tgq-30" target="q32LoB8GE_cLFo8J0Tgq-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-30" value="&lt;font face=&quot;Lucida Console&quot;&gt;i ＝ i + 1&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="Wbwb5unohPnjsa8_4MkI-1">
+          <mxGeometry x="550" y="520" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-31" value="戻る" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="Wbwb5unohPnjsa8_4MkI-1">
+          <mxGeometry x="550" y="767" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Wbwb5unohPnjsa8_4MkI-1" source="q32LoB8GE_cLFo8J0Tgq-34" target="q32LoB8GE_cLFo8J0Tgq-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-34" value="&lt;font face=&quot;Lucida Console&quot;&gt;処理件数 ＝ i&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="Wbwb5unohPnjsa8_4MkI-1">
+          <mxGeometry x="550" y="597" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-62" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Wbwb5unohPnjsa8_4MkI-1" source="q32LoB8GE_cLFo8J0Tgq-38" target="q32LoB8GE_cLFo8J0Tgq-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-38" value="集計処理" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="Wbwb5unohPnjsa8_4MkI-1">
+          <mxGeometry x="790" y="40" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-39" value="&lt;font face=&quot;Lucida Console&quot;&gt;i ＝ 0&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="Wbwb5unohPnjsa8_4MkI-1">
+          <mxGeometry x="790" y="200" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-40" value="&lt;span style=&quot;background-color: initial;&quot;&gt;商品別売上&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;表示ループ&lt;/span&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;font face=&quot;Lucida Console&quot;&gt;i ＜ 6&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;" vertex="1" parent="Wbwb5unohPnjsa8_4MkI-1">
+          <mxGeometry x="770.5" y="275" width="139" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="Wbwb5unohPnjsa8_4MkI-1" source="q32LoB8GE_cLFo8J0Tgq-41" target="q32LoB8GE_cLFo8J0Tgq-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-41" value="処理件数" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" vertex="1" parent="Wbwb5unohPnjsa8_4MkI-1">
+          <mxGeometry x="790" y="120" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="Wbwb5unohPnjsa8_4MkI-1" source="q32LoB8GE_cLFo8J0Tgq-42" target="q32LoB8GE_cLFo8J0Tgq-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-42" value="分類別売上合計[&lt;font face=&quot;Lucida Console&quot;&gt;i&lt;/font&gt;]" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" vertex="1" parent="Wbwb5unohPnjsa8_4MkI-1">
+          <mxGeometry x="775" y="360" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Wbwb5unohPnjsa8_4MkI-1" source="q32LoB8GE_cLFo8J0Tgq-44" target="q32LoB8GE_cLFo8J0Tgq-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-44" value="&lt;font face=&quot;Lucida Console&quot;&gt;i ＝ i + 1&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="Wbwb5unohPnjsa8_4MkI-1">
+          <mxGeometry x="790" y="443" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-45" value="&lt;span style=&quot;background-color: initial;&quot;&gt;商品別売上&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;表示ループ&lt;/span&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;flipV=1;" vertex="1" parent="Wbwb5unohPnjsa8_4MkI-1">
+          <mxGeometry x="770.5" y="510" width="139" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="Wbwb5unohPnjsa8_4MkI-1" source="q32LoB8GE_cLFo8J0Tgq-46" target="q32LoB8GE_cLFo8J0Tgq-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-46" value="&lt;font face=&quot;Lucida Console&quot;&gt;売上計+＝ 売上[i]&amp;nbsp;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="Wbwb5unohPnjsa8_4MkI-1">
+          <mxGeometry x="515" y="443" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-52" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Wbwb5unohPnjsa8_4MkI-1" source="q32LoB8GE_cLFo8J0Tgq-50" target="q32LoB8GE_cLFo8J0Tgq-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-50" value="売上計" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" vertex="1" parent="Wbwb5unohPnjsa8_4MkI-1">
+          <mxGeometry x="790" y="597" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-51" value="戻る" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="Wbwb5unohPnjsa8_4MkI-1">
+          <mxGeometry x="790" y="677" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="Wbwb5unohPnjsa8_4MkI-1" source="q32LoB8GE_cLFo8J0Tgq-45" target="q32LoB8GE_cLFo8J0Tgq-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="Wbwb5unohPnjsa8_4MkI-1" source="q32LoB8GE_cLFo8J0Tgq-40" target="q32LoB8GE_cLFo8J0Tgq-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q32LoB8GE_cLFo8J0Tgq-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="Wbwb5unohPnjsa8_4MkI-1" source="q32LoB8GE_cLFo8J0Tgq-39" target="q32LoB8GE_cLFo8J0Tgq-40">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
