@@ -1,0 +1,93 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" version="24.7.12">
+  <diagram name="11_calcChange" id="iT6GAmAel3aYIEC_cNCm">
+    <mxGraphModel dx="1634" dy="842" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9xLJ-oofB6RGyYax8c_z-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9xLJ-oofB6RGyYax8c_z-1" target="9xLJ-oofB6RGyYax8c_z-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9xLJ-oofB6RGyYax8c_z-1" value="開始" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="110" y="80" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9xLJ-oofB6RGyYax8c_z-2" value="終了" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="110" y="480" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9xLJ-oofB6RGyYax8c_z-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9xLJ-oofB6RGyYax8c_z-3" target="9xLJ-oofB6RGyYax8c_z-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9xLJ-oofB6RGyYax8c_z-3" value="入力処理" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;spacingTop=-32;" vertex="1" parent="1">
+          <mxGeometry x="110" y="240" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9xLJ-oofB6RGyYax8c_z-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9xLJ-oofB6RGyYax8c_z-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9xLJ-oofB6RGyYax8c_z-4" value="釣銭計算" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;spacingTop=-32;" vertex="1" parent="1">
+          <mxGeometry x="110" y="320" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9xLJ-oofB6RGyYax8c_z-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9xLJ-oofB6RGyYax8c_z-10" target="9xLJ-oofB6RGyYax8c_z-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9xLJ-oofB6RGyYax8c_z-10" value="入力処理" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="310" y="80" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9xLJ-oofB6RGyYax8c_z-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9xLJ-oofB6RGyYax8c_z-11" target="9xLJ-oofB6RGyYax8c_z-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9xLJ-oofB6RGyYax8c_z-11" value="金額：" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="310" y="160" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9xLJ-oofB6RGyYax8c_z-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9xLJ-oofB6RGyYax8c_z-12" target="9xLJ-oofB6RGyYax8c_z-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9xLJ-oofB6RGyYax8c_z-12" value="金額" style="html=1;strokeWidth=2;shape=manualInput;whiteSpace=wrap;rounded=1;size=13;arcSize=0;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="310" y="240" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9xLJ-oofB6RGyYax8c_z-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9xLJ-oofB6RGyYax8c_z-17" target="9xLJ-oofB6RGyYax8c_z-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9xLJ-oofB6RGyYax8c_z-17" value="預り金：" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="310" y="320" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9xLJ-oofB6RGyYax8c_z-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9xLJ-oofB6RGyYax8c_z-19" target="9xLJ-oofB6RGyYax8c_z-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9xLJ-oofB6RGyYax8c_z-19" value="預り金" style="html=1;strokeWidth=2;shape=manualInput;whiteSpace=wrap;rounded=1;size=13;arcSize=0;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="310" y="400" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9xLJ-oofB6RGyYax8c_z-21" value="戻る" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="310" y="480" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9xLJ-oofB6RGyYax8c_z-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9xLJ-oofB6RGyYax8c_z-23" target="9xLJ-oofB6RGyYax8c_z-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9xLJ-oofB6RGyYax8c_z-23" value="釣銭計算" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="510" y="80" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9xLJ-oofB6RGyYax8c_z-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9xLJ-oofB6RGyYax8c_z-24" target="9xLJ-oofB6RGyYax8c_z-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9xLJ-oofB6RGyYax8c_z-24" value="釣銭 ＝ 預り金 ー 金額" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="490" y="160" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9xLJ-oofB6RGyYax8c_z-25" value="戻る" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="510" y="240" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9xLJ-oofB6RGyYax8c_z-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9xLJ-oofB6RGyYax8c_z-28" target="9xLJ-oofB6RGyYax8c_z-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9xLJ-oofB6RGyYax8c_z-28" value="金額, 預り金, 釣銭" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=hexagon;perimeter=hexagonPerimeter2;arcSize=6;size=0.12500000000000142;spacingTop=-32;" vertex="1" parent="1">
+          <mxGeometry x="80" y="160" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9xLJ-oofB6RGyYax8c_z-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9xLJ-oofB6RGyYax8c_z-31" target="9xLJ-oofB6RGyYax8c_z-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9xLJ-oofB6RGyYax8c_z-31" value="預り金" style="html=1;strokeWidth=2;shape=manualInput;whiteSpace=wrap;rounded=1;size=13;arcSize=0;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="110" y="400" width="100" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
