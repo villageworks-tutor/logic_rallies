@@ -41,3 +41,4 @@ out/
 *.bak
 *.~lock.*
 .$*.drawio.bkp
+.$*.drawio.dtmp
