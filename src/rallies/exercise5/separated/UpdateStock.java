@@ -23,6 +23,10 @@ public class UpdateStock {
 	private static final String CSV_SALES_DATA_PATH = FILE_PATH + "sales.csv";
 	private static final String CSV_NEW_ITEM_MASTER_PATH = FILE_PATH + "separated/newItem.csv";
 	
+	private static final String ERR_SALES_FILE_NOT_FOUND = "売上データ(sales.csv)が見つかりません。";
+	private static final String ERR_ITEM_FILE_NOT_FOUND = "商品マスタ（item.csv）が見つかりません。";
+	private static final String ERR_ITEM_RECORD_NOT_FOUND = "商品マスタにレコードがありません。";
+	
 	/**
 	 * メイン処理
 	 * @param args コマンドライン引数（指定なし）
@@ -171,7 +175,7 @@ public class UpdateStock {
 		} catch (NoSuchFileException e) {
 			// 売上データファイルが見つからなかった場合：メッセージを表示して強制終了
 			// e.printStackTrace();
-			System.err.println("売上データ(sales.csv)が見つかりません。");
+			System.err.println(ERR_SALES_FILE_NOT_FOUND);
 			System.exit(-1);
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -205,14 +209,14 @@ public class UpdateStock {
 			}
 			// 商品マスタにレコードがない場合：メッセージを表示して強制終了
 			if (itemList.size() == 0) {
-				System.err.println("商品マスタにレコードがありません。");
+				System.err.println(ERR_ITEM_RECORD_NOT_FOUND);
 				System.exit(-1);
 			}
 			
 		} catch (NoSuchFileException e) {
 			// 商品マスタファイルが見つからなかった場合：メッセージを表示して強制終了
 			// e.printStackTrace();
-			System.err.println("商品マスタ（item.csv）が見つかりません。");
+			System.err.println(ERR_ITEM_FILE_NOT_FOUND);
 			System.exit(-1);
 		} catch (IOException e) {
 			e.printStackTrace();
