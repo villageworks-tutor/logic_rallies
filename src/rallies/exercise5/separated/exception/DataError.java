@@ -28,6 +28,14 @@ public class DataError {
 		this.target = target;
 	}
 	
+	public ErrorType getType() {
+		return this.type;
+	}
+	
+	/**
+	 * エラー表示用メッセージを取得する
+	 * @return エラー表示用メッセージ
+	 */
 	public String getMeassage() {
 		StringBuffer buffer = new StringBuffer();
 		
@@ -47,7 +55,6 @@ public class DataError {
 		buffer.append(this.target.getCsvValue());
 		
 		return buffer.toString();
-	}
-	
+	}	
 	
 }

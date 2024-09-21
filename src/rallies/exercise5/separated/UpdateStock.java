@@ -11,6 +11,8 @@ import java.util.List;
 
 import rallies.exercise5.separated.bean.Item;
 import rallies.exercise5.separated.bean.Sales;
+import rallies.exercise5.separated.exception.DataError;
+import rallies.exercise5.separated.exception.ErrorType;
 
 
 public class UpdateStock {
@@ -32,11 +34,12 @@ public class UpdateStock {
 	 * @param args コマンドライン引数（指定なし）
 	 */
 	public static void main(String[] args) {
+		
 		// 初期化処理
 		List<Item> itemList = new ArrayList<>();        // 商品マスタ（リスト）
 		List<Sales> salesList = new ArrayList<>();      // 売上データ（リスト）
 		List<Item> newItemList = new ArrayList<>();     // 新商品マスタ（リスト）
-		List<String> errorList = new ArrayList<>();     // エラーリスト
+		List<DataError> errorList = new ArrayList<>();     // エラーリスト
 		
 		// 商品マスタ読込み
 		itemList = loadItemMaster(CSV_ITEM_MASTER_PATH);
@@ -53,10 +56,44 @@ public class UpdateStock {
 		writeToMasterFile(CSV_NEW_ITEM_MASTER_PATH, newItemList);
 		
 		// 表示処理：処理件数の表示
+		displayProcessedCounts(itemList, newItemList, salesList, errorList);
+	}
+
+	/**
+	 * 各種の処理件数を表示する
+	 * @param itemList    商品マスタリスト
+	 * @param newItemList 新商品マスタリスト
+	 * @param salesList   売上データリスト
+	 * @param errorList   エラーメッセージリスト
+	 */
+	private static void displayProcessedCounts(
+			List<Item> itemList, 
+			List<Item> newItemList, 
+			List<Sales> salesList,
+			List<DataError> errorList) {
+		
+		// エラー種別エラー数カウンタの初期化
+		int salesErrorCount = 0;
+		int stockErrorCount = 0;
+		// エラーメッセージリストの走査
+		for (DataError error : errorList) {
+			switch(error.getType()) {
+			case SALES_DATA:   // 売上データエラーのカウント
+				salesErrorCount++;
+				break;
+			case STOCK_UPDATE: // 在庫更新エラーのカウント
+				stockErrorCount++;
+				break;
+			default:
+				break;
+			}
+		}
+		
+		// 結果表示
 		System.out.println("* * *  処理件数  * * *");
 		System.out.println("\t売上データ：" + salesList.size() + " 件");
-		System.out.println("\t売上エラー：" + errorList.size() + " 件");
-		System.out.println("\t在庫データ：" + errorList.size() + " 件");
+		System.out.println("\t売上エラー：" + salesErrorCount + " 件");
+		System.out.println("\t在庫エラー：" + stockErrorCount + " 件");
 		System.out.println("\t商品マスタ：" + itemList.size() + " 件");
 		System.out.println("\t新商品マスタ：" + newItemList.size() + " 件");
 	}
@@ -67,10 +104,11 @@ public class UpdateStock {
 	 * @param newItemList 新商品マスタリスト
 	 */
 	private static void writeToMasterFile(String filePath, List<Item> newItemList) {
-		filePath = "src/rallies/exercise5/newItem.csv";
+		
+		// 新商品マスタファイルに新商品マスタデータを書き込む
 		try (PrintWriter writer = new PrintWriter(filePath);) {
 			for (Item item : newItemList) {
-				writer.println(item.toString());
+				writer.println(item.getCsvValue());
 			}
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -82,9 +120,9 @@ public class UpdateStock {
 	 * エラーメッセージを表示する
 	 * @param errorList エラーメッセージリスト
 	 */
-	private static void displayErrorMesages(List<String> errorList) {
-		for (String error : errorList) {
-			System.out.println(error);
+	private static void displayErrorMesages(List<DataError> errorList) {
+		for (DataError error : errorList) {
+			System.out.println(error.getMeassage());
 		}
 	}
 
@@ -98,7 +136,7 @@ public class UpdateStock {
 	private static List<Item> updateStock(
 			List<Sales> salesList, 
 			List<Item> itemList, 
-			List<String> errorList) {
+			List<DataError> errorList) {
 		// 戻り値であるエラーメッセージリストを初期化
 		List<Item> newItemList = new ArrayList<Item>();
 		
@@ -128,7 +166,7 @@ public class UpdateStock {
 				// 新規商品の登錄
 				newItemList.add(newItem);
 				// 売上データエラーの追加
-				errorList.add("売上データエラー（" + count + "）：" + newItem.toString());
+				errorList.add(new DataError(ErrorType.SALES_DATA, count, newItem));
 				// 次の売上データのループに遷移
 				continue;
 			}
@@ -139,7 +177,7 @@ public class UpdateStock {
 			if (newStock < 0) {
 				// 新在庫が負の整数になる場合：0で書き換えて在庫更新エラーに追加
 				target.setStock(0);
-				errorList.add("在庫更新エラー（" + count + "）：" + sales.toString());
+				errorList.add(new DataError(ErrorType.STOCK_UPDATE, count, sales));
 			} else {
 				// 新在庫が正の整数である場合：新在庫で書換
 				target.setStock(newStock);
