@@ -1,4 +1,4 @@
-package rallies.exercise5.separated.exception;
+package rallies.exercise5.separated.model;
 
 import rallies.exercise5.separated.bean.ICsv;
 
